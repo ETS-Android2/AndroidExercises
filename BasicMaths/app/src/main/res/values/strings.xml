@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BasicMaths</string>
+    <string name="button1">1</string>
+    <string name="button2">2</string>
+    <string name="button3">3</string>
+    <string name="button4">4</string>
+    <string name="button5">5</string>
+    <string name="button6">6</string>
+    <string name="button7">7</string>
+    <string name="button8">8</string>
+    <string name="button9">9</string>
+    <string name="button0">0</string>
+    <string name="buttonBack">Delete</string>
+    <string name="buttonSend">Send</string>
+    <string name="button_Add">Add</string>
+    <string name="button_Subtract">Subtract</string>
+    <string name="button_Multiply">Multiply</string>
+    <string name="button_Division">Division</string>
+    <string name="button_Results">Get last results</string>
+    <string name="digits">Digits </string>
+    <string name="numbers">Numbers </string>
+    <string name="userNumber">Your number</string>
+    <string name="empty">Empty</string>
+    <string name="date">Date</string>
+    <string name="operation">Operation</string>
+    <string name="number_exercises">Number exercises</string>
+</resources>

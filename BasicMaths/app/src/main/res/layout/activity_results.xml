@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorBackground2"
+    android:gravity="center_vertical">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/r01"
+                    android:background="@color/colorYellow"
+                    android:padding="5dp"
+                    android:text="@string/operation" />
+
+                <TextView
+                    android:id="@+id/r02"
+                    android:background="@color/colorButtonSend"
+                    android:padding="5dp"
+                    android:text="@string/date" />
+
+                <TextView
+                    android:id="@+id/r03"
+                    android:background="@color/colorYellow"
+                    android:padding="5dp"
+                    android:text="@string/number_exercises" />
+
+                <TextView
+                    android:id="@+id/r04"
+                    android:background="@color/colorButtonSend"
+                    android:padding="5dp"
+                    android:text="@string/digits" />
+
+                <TextView
+                    android:id="@+id/r05"
+                    android:background="@color/colorYellow"
+                    android:padding="5dp"
+                    android:text="@string/numbers" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/r1"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r11"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r12"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r13"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r14"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/r2"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r21"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r22"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r23"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r24"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/r3"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r31"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r32"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r33"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r34"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/r4"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r41"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r42"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r43"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r44"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/r5"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r51"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r52"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r53"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r54"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/r6"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r61"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r62"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r63"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r64"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/r7"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r71"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r72"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r73"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r74"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/r8"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r81"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r82"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r83"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r84"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/r9"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r91"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r92"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r93"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r94"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/r10"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r101"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r102"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r103"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+
+                <TextView
+                    android:id="@+id/r104"
+                    android:padding="5dp"
+                    android:text="@string/empty" />
+            </TableRow>
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
