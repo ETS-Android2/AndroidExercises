@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scrollableRegister">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_register"
+    tools:context=".RegisterFragment">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/name"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/text_type"
+        app:layout_constraintRight_toLeftOf="@id/autoCompleteInsert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/autoCompleteInsert"
+        />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteInsert"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".75"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:hint="@string/product"
+        app:layout_constraintStart_toEndOf="@id/text_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/text_name"
+        app:layout_constraintRight_toRightOf="@id/text_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_type"/>
+
+    <TextView
+        android:id="@+id/text_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        app:layout_constraintRight_toLeftOf="@id/radioGroup_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_name"
+        app:layout_constraintEnd_toStartOf="@id/radioGroup_type"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_type"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".75"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/text_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/autoCompleteInsert"
+        android:orientation="vertical"
+        android:layout_marginRight="1dp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <TextView
+        android:id="@+id/text_brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brand"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/autoCompleteBrand"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup_type" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteBrand"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".75"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:hint="@string/brand"
+        app:layout_constraintStart_toEndOf="@id/text_brand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/text_brand"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup_type" />
+
+    <TextView
+        android:id="@+id/text_unity"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25"
+        android:layout_height="wrap_content"
+        android:text="@string/unity"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editTextNumber_unity"
+        app:layout_constraintTop_toBottomOf="@id/autoCompleteBrand" />
+
+    <EditText
+        android:id="@+id/editTextNumber_unity"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="numberSigned"
+        app:layout_constraintLeft_toRightOf="@id/text_unity"
+        app:layout_constraintTop_toBottomOf="@id/autoCompleteBrand" />
+
+    <TextView
+        android:id="@+id/text_weight"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/editTextNumber_unity"
+        app:layout_constraintEnd_toStartOf="@id/editTextNumberDecimal_weight"
+        app:layout_constraintTop_toBottomOf="@id/autoCompleteBrand" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal_weight"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toRightOf="@id/text_weight"
+        app:layout_constraintTop_toBottomOf="@id/autoCompleteBrand" />
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editTextNumber_price"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber_unity" />
+
+    <EditText
+        android:id="@+id/editTextNumber_price"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toRightOf="@id/text_price"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber_unity" />
+
+    <TextView
+        android:id="@+id/text_discount"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25"
+        android:layout_height="wrap_content"
+        android:text="@string/discount"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@id/editTextNumber_price"
+        app:layout_constraintEnd_toStartOf="@id/editTextNumber_discount"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumberDecimal_weight" />
+
+    <EditText
+        android:id="@+id/editTextNumber_discount"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        android:inputType="number"
+        app:layout_constraintLeft_toRightOf="@id/text_discount"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumberDecimal_weight" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".25"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/editTextDate"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber_price" />
+
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".5"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:focusable="false"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber_price"
+        app:layout_constraintLeft_toRightOf="@id/text_date" />
+
+
+    <TextView
+        android:id="@+id/text_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/store"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/autoComplete_store"
+        app:layout_constraintTop_toBottomOf="@id/editTextDate" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoComplete_store"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".75"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:hint="@string/store"
+        app:layout_constraintStart_toEndOf="@id/text_store"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/text_store"
+        app:layout_constraintRight_toRightOf="@id/text_store"
+        app:layout_constraintTop_toBottomOf="@id/editTextDate" />
+
+    <Button
+        android:id="@+id/button_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/button_addToList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to shopping list"
+        app:layout_constraintBottom_toTopOf="@id/button_create"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <!--
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+        -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

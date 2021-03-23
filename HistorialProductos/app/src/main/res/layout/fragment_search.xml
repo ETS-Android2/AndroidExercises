@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/returnS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchViewText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/insertName"
+        app:layout_constraintTop_toBottomOf="@+id/button_return" />
+
+    <ListView
+        android:id="@+id/listView_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchViewText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchViewText" />
+
+    <TextView
+        android:id="@+id/textView_countability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="2dp"
+        android:paddingLeft="2dp"
+        android:paddingEnd="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listView_search" />
+
+    <ScrollView
+        android:id="@+id/scrollableTableAccountability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView_countability">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tableAccountability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingStart="2dp"
+                android:paddingLeft="2dp"
+                android:paddingEnd="2dp"
+                android:stretchColumns="*"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TableRow
+                    android:id="@+id/headerRow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/h1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_rectangle"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/table_padding"
+                        android:paddingRight="@dimen/table_padding"
+                        android:text="@string/date"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/h2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_rectangle"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/table_padding"
+                        android:paddingRight="@dimen/table_padding"
+                        android:text="@string/store"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/h3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_rectangle"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/table_padding"
+                        android:paddingRight="@dimen/table_padding"
+                        android:text="@string/price"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/h4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_rectangle"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/table_padding"
+                        android:paddingRight="@dimen/table_padding"
+                        android:text="@string/priceD"
+                        android:textColor="@color/colorBlack" />
+
+                    <TextView
+                        android:id="@+id/h5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/text_rectangle"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/table_padding"
+                        android:paddingRight="@dimen/table_padding"
+                        android:text="@string/discount"
+                        android:textColor="@color/colorBlack" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

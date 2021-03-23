@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Products History</string>
+    <string name="action_settings">Settings</string>
+    <string name="database_name">roomDatabase</string>
+    <string name="folder_name">HistoryProductApp</string>
+    <string name="folder_path">sdcard/Download</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="fragment_register">Register Fragment</string>
+    <string name="fragment_search">Search Fragment</string>
+    <string name="fragment_export_import">Export/Import Fragment</string>
+    <string name="returnS">Return</string>
+    <!-- Strings used for buttons -->
+    <string name="export_import">Export/Import</string>
+    <string name="exportD">Export database</string>
+    <string name="importD">Import database</string>
+    <string name="search">Search</string>
+    <string name="register">Register</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <!-- Strings used for texts inside the fragments -->
+    <string name="search_hint">Name of the product</string>
+    <string name="search_title">Search product</string>
+    <string name="name">Name</string>
+    <string name="type">Type</string>
+    <string name="brand">Brand</string>
+    <string name="unity">Amount</string>
+    <string name="price">Price</string>
+    <string name="store">Store</string>
+    <string name="product">Product</string>
+    <string name="weight">Weight</string>
+    <string name="discount">Discount</string>
+    <string name="priceD">Price Reduced</string>
+    <string name="date">Date</string>
+    <string name="insertName">Insert product name</string>
+    <string name="insertDestination">Insert destination: i.e /sdcard/Download/</string>
+    <string name="insertSource">Insert destination: i.e /sdcard/Download/file.db</string>
+    <!-- Strings for message errors or information for the user -->
+    <string name="errorProduct">Please write or choose a product!</string>
+    <string name="errorStore">Please write or choose a store!</string>
+    <string name="errorBrand">Please write or choose a brand!</string>
+    <string name="errorPrice">Please write a price for the product!</string>
+    <string name="errorType">Please choose a type for the product!</string>
+    <string name="errorDiscount">Please set the discount grater than 0 and lower than 100!</string>
+    <string name="errorInsertProduct">You cannot insert the new information. Check the errors</string>
+    <string name="errorExport">Please create folder \'Download\' in internal storage.\nThe database has not been exported.</string>
+    <string name="errorImport">Please review the file. File not imported</string>
+    <string name="errorAddress">Please set a valid address!</string>
+    <string name="fixing">Sorry... I\'m being fixed</string>
+    <string name="successExport">The Database has been exported to \'Download\' folder</string>
+    <string name="successImport">The Database has been imported</string>
+    <string name="cancel">Cancel</string>
+    <!-- Dialog messages -->
+    <string name="dialog_import_database">¿Do you want to import database?\nIf you do it you would lose the previous database on the device.</string>
+    <string name="dialog_import_title">Import a new database</string>
+    <string name="dialog_export_title">Export existing database</string>
+    <string name="dialog_export_database">The file will be exported to the next location: \n</string>
+    <!-- Fragment and welcome -->
+    <string name="welcome">History Product</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
