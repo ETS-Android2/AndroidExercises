@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TransmilenioEstaciones</string>
+    <string name="tab_text_1">Troncal</string>
+    <string name="tab_text_2">Estaciones Troncal</string>
+    <string name="tab_text_3">Alimentador</string>
+    <string name="tab_text_4">Padron</string>
+    <string name="tab_text_5">Estación</string>
+
+    <string name="frag_bus">Bus</string>
+    <string name="frag_station">Estación</string>
+
+    <string name="hint_search_station">Buscar estación</string>
+    <string name="hint_search_bus">Buscar bus</string>
+</resources>
